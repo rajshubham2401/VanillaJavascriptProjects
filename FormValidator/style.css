@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --success-color: rgb(0, 245, 0);
+    --error-color: rgb(255, 57, 57);
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+    padding: 40px;
+}
+
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    color: grey;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control sup {
+    color: red;
+}
+
+.form-control input {
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.form-control input:focus {
+    outline: 0;
+    border-color: grey;
+}
+
+.form-control.success input {
+    border-color: var(--success-color);
+}
+
+.form-control.error input {
+    border-color: var(--error-color);
+}
+
+small {
+    color: var(--error-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form button {
+    cursor: pointer;
+    background-color: rgb(10, 121, 248);
+    border: 2px solid rgb(10, 121, 248);
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    outline: 0;
+}
