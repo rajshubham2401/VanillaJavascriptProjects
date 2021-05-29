@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: steelblue;
+}
+
+header {
+    height: 30vh;
+}
+
+.header_content {
+    height: 100%;
+    width: 100%;
+    background: steelblue;
+    color: white;
+}
+
+.welcome_msg_container,
+.rgb_container {
+    width: max-content;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+p {
+    font-size: 20px;
+    padding: 5px;
+}
+
+#rgb_holder {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.result_msg_container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background: whitesmoke;
+    color: steelblue;
+    /* padding: 10px; */
+}
+
+section {
+    background-color: black;
+}
+
+.section_content {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 30px;
+    justify-items: center;
+    /* align-items: center; */
+    width: max-content;
+    height: 65vh;
+    margin: auto;
+    padding: 25px;
+}
+
+.result_msg_container>p {
+    display: none;
+    cursor: pointer;
+    padding: 6px 12px;
+    transition: all ease-in-out .2s;
+}
+
+.result_msg_container>p:hover {
+    background-color: steelblue;
+    color: white;
+}
+
+#new_color {
+    display: inline-block;
+}
+
+#win_msg:hover,
+#lost_msg:hover {
+    background-color: transparent;
+    color: steelblue;
+    cursor: default;
+}
+
+#win_msg {
+    font-weight: 700;
+}
+
+#lost_msg {
+    display: inline-block;
+}
+
+.color_box {
+    width: 200px;
+    height: 200px;
+    background-color: steelblue;
+    border-radius: 10px;
+    border: 1px solid white;
+    animation: fade 1s;
+}
+
+.color_box:hover {
+    cursor: pointer;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 1;
+    }
+}
+
+@keyframes woosh {
+    0% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 960px) {}
