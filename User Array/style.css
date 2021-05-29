@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.section {
+    height: 100vh;
+    background: rgb(245, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.section>h1 {
+    font-size: 35px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 70%;
+}
+
+.menu {
+    width: 25%;
+    padding: 20px;
+    /* border: 1px solid rgba(0, 0, 0, 0.4); */
+}
+
+.menu-button {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    transition: all ease-in-out 0.2s;
+}
+
+.menu-button:hover {
+    border: 1px solid rgba(0, 0, 0, 1);
+    transform: scale(1.05);
+}
+
+.menu-button:focus {
+    outline: none;
+}
+
+.details-container {
+    width: 40%;
+    max-height: 400px;
+    overflow: auto;
+    /* border: 2px solid rgba(0, 0, 0, 0.4); */
+}
+
+.title {
+    font-size: 15px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.4); */
+}
+
+.details {
+    background: rgba(255, 255, 255, 1);
+    font-size: 12px;
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    border-radius: 5px;
+    cursor: pointer;
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.61); */
+}
+
+.title h2,
+.details h2 {
+    font-weight: 400;
+}
+
+.profile-container {
+    margin: 20px;
+    height: 400px;
+    width: max-content;
+    overflow: hidden;
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+}
+
+.profile-container:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 1);
+    padding: 10px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.pic-container {
+    width: 120px;
+    height: 120px;
+    margin: auto;
+}
+
+.pic-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-details {
+    padding: 5px;
+}
+
+.profile-details h3 {
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
